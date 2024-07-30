@@ -21,9 +21,9 @@ public class Member {
     private String name;
 
     @Embedded
-    @JsonIgnore
     private Address address;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 }

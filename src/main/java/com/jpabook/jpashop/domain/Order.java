@@ -52,7 +52,7 @@ public class Order {
     }
 
     //==생성 메소드==//
-    public static Order createOrder(Member member, Delivery delivery, OrderItem... orderItems){
+    public static Order createOrder(Member member, Delivery delivery, OrderItem... orderItems){ //orderItem을 쭉쭉 넘길 수 있다.
         Order order = new Order();
         order.setMember(member);
         order.setDelivery(delivery);
